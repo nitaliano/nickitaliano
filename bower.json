@@ -1,0 +1,12 @@
+{
+	"name": "nickitaliano",
+	"dependencies": {
+		"jquery": "~1.10.2",
+	  "jquery-ui": "~1.10.3",
+	  "modernizr": "~2.7.1",
+	  "requirejs": "~2.1.9",
+	  "backbone": "~1.1.0",
+	  "underscore": "~1.5.2",
+	  "bootstrap": "~3.0.3"
+	}
+}
