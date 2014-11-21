@@ -8,25 +8,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
 
         <link rel="stylesheet" href="{{cssPath}}">
-        <script src="{{modernizrPath}}"></script>
     </head>
     <body>
       <!--[if lt IE 9]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
       
- 			<header class="affix-top">
- 				{{> _nav}}
+ 			<header>
+ 				<nav class="nav">
+          <section class="content">
+            <button class="btn pull-left">Home</button>
+            <button class="btn pull-right">Fun</button>
+          </section>   
+        </nav>
  			</header>
 
  			<main>
-        {{> _loader}}
-        {{> _home}}
-        {{> _about}}
-        {{> _experience}}
-        {{> _skills}}
+        <div class="content-wrapper">
+          <section class="billboard">
+            <h4 class="title">HI</h4>
+            <h3 class="sub-title">
+              I'm a software engineer!<br>
+              <button class="btn">Github</button>
+              <button class="btn">LinkedIn!</button>
+            </h3>
+            <img class="img-responsive" src="/img/nick-art.png">
+          </section>
+          
+          <!--
+          <div class="tiles">
+            <div class="tile col1 row1" style="background:yellow;"></div>
+            <div class="tile col2 row1" style="background:gray;"></div>
+            <div class="tile col1 row2" style="background:red;"></div>
+            <div class="tile col2 row2" style="background:orange;"></div>
+          </div>
+        -->
+
+        </div>
  			</main>
 
-      <script src="{{requirejs.path}}" data-main="{{requirejs.main}}"></script>
+      <script src="{{requirejs.path}}" data-main="{{requirejs}}"></script>
     </body>
 </html>

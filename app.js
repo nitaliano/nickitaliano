@@ -13,4 +13,12 @@ app.use(express.methodOverride());
 app.use(router());
 app.use(express.static(__dirname + '/public'));
 
+app.get('/timesheet', function (req, res) {
+	res.render('game');
+});
+
+app.get('/breakout', function (req, res) {
+	res.render('brickbreaker');
+});
+
 app.listen(8888);

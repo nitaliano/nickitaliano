@@ -1,3 +1,16 @@
+function Main() {
+    this.$billboard = $('.billboard');
+    this.cssAttr = 'background-position';
+    this.heartbeat();
+  }
+
+  Main.prototype.heartbeat = function () {
+    this.$billboard.css(this.cssAttr, parseInt(this.$billboard.css(this.cssAttr)) + 1);
+    requestAnimationFrame(this.heartbeat.bind(this));
+  };
+
+  new Main();
+  
 define([
   'backbone', 
   'jquery'

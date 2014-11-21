@@ -20,6 +20,6 @@ require.config({
   }
 });
 
-require(['./navigation'], function (Navigation) {
-  new Navigation();
+require(['./app'], function (App) {
+  App.init();
 });
